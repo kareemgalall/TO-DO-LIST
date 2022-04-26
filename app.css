@@ -16,11 +16,19 @@
 
 .theme-block {
     margin: -10px 0 0;
-    width: 30px;
 }
 
 .theme-block #theme {
     display: none;
+}
+
+.theme-block #theme+label::before {
+    content: '';
+    background: url(assets/icon-sun.svg);
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
 }
 
 .theme-block #theme:checked+label::before {
@@ -267,14 +275,6 @@ form {
     cursor: pointer;
     height: 0;
     width: 0;
-}
-
-.items-status input[type="radio"]:checked~span {
-    color: hsl(221, 62%, 52%);
-}
-
-ul li.hidden {
-    display: none;
 }
 
 .items-status input[type="radio"]:checked~span {
