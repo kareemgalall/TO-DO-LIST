@@ -22,15 +22,6 @@
     display: none;
 }
 
-.theme-block #theme+label::before {
-    content: '';
-    background: url(assets/icon-sun.svg);
-    display: block;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-}
-
 .theme-block #theme:checked+label::before {
     background: url(assets/icon-moon.svg);
 }
@@ -118,20 +109,9 @@ body {
     position: relative;
 }
 
-.check-box {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid var(--check-mark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-}
-
 .check-mark input {
-    width: 30px;
-    height: 40px;
+    width: 300px;
+    height: 70px;
     background: transparent;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -139,8 +119,8 @@ body {
     border: none;
     outline: none;
     position: relative;
-    left: -5px;
-    top: -5px;
+    left: 2px;
+    top: 6px;
     cursor: pointer;
 }
 
@@ -283,4 +263,8 @@ form {
 
 ul li.hidden {
     display: none;
+}
+
+display: none;
+
 }
